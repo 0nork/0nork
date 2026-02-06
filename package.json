@@ -1,0 +1,47 @@
+{
+  "name": "0nork",
+  "version": "1.0.0",
+  "description": "0nORK - AI Orchestration Infrastructure. The parent company behind 0nMCP and the .0n standard.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "echo '\\n🚀 0nORK - AI Orchestration Infrastructure\\n\\nProducts:\\n  • 0nmcp - Universal AI API Orchestrator\\n  • 0n-spec - The .0n Standard\\n\\nInstall:\\n  npx 0nmcp init\\n\\nLearn more: https://0nork.com\\n'"
+  },
+  "keywords": [
+    "0nork",
+    "0nmcp",
+    "0n",
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "orchestration",
+    "automation",
+    "api",
+    "infrastructure"
+  ],
+  "author": {
+    "name": "0nORK",
+    "email": "hello@0nork.com",
+    "url": "https://0nork.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0nork/0nork.git"
+  },
+  "bugs": {
+    "url": "https://github.com/0nork/0nork/issues"
+  },
+  "homepage": "https://0nork.com",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "0nmcp": ">=1.0.0",
+    "0n-spec": ">=1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "0nmcp": { "optional": true },
+    "0n-spec": { "optional": true }
+  }
+}
