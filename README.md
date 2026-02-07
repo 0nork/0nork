@@ -30,7 +30,7 @@
 
 **Universal AI API Orchestrator**
 
-Connect Claude to 17+ services. Say what you want. AI does the rest.
+The most comprehensive MCP server available. 252 tools, 17 services, natural language interface. Connect Claude to your entire stack.
 
 ```bash
 npx 0nmcp init
@@ -63,7 +63,7 @@ npx 0n-spec validate my-workflow.0n
 ├── connections/                ← Service credentials
 │   ├── stripe.0n
 │   ├── slack.0n
-│   └── gohighlevel.0n
+│   └── crm.0n
 ├── workflows/                  ← Automation definitions
 │   └── invoice-notify.0n
 ├── snapshots/                  ← System state captures
@@ -141,9 +141,17 @@ Claude handles the rest.
 
 | Package | Description | Install |
 |---------|-------------|---------|
-| `0nmcp` | MCP Server | `npx 0nmcp` |
-| `0n-spec` | .0n Standard | `npx 0n-spec` |
-| `0nork` | This package | `npm i 0nork` |
+| `0nmcp` | Universal AI API Orchestrator — 252 tools | `npx 0nmcp` |
+| `0n-spec` | The .0n Standard — config format | `npx 0n-spec` |
+| `0nork` | This package — ecosystem root | `npm i 0nork` |
+
+### Community
+
+The 0n ecosystem is backed by **1,000+ developers** building the future of AI orchestration. We ship weekly, iterate fast, and build in the open.
+
+- [GitHub Discussions](https://github.com/0nork/0nMCP/discussions) — Questions, ideas, show & tell
+- [Open Issues](https://github.com/0nork/0nMCP/issues) — Bugs, feature requests
+- [Contributing](https://github.com/0nork/0nMCP/blob/main/CONTRIBUTING.md) — Add services, fix bugs, improve docs
 
 ---
 
@@ -151,7 +159,9 @@ Claude handles the rest.
 
 MIT License - see individual package licenses.
 
-**Trademarks**: "0nORK", "0nMCP", ".0n", and "The .0n Standard" are trademarks of 0nORK.
+**Our position:** Every core tool we build gets released as open source. We believe the AI orchestration layer should be free, composable, and community-owned. If someone tries to sell you these tools, know that they're free right here. Always.
+
+**Trademarks**: "0nORK", "0nMCP", ".0n", and "The .0n Standard" are trademarks of RocketOpp. The MIT license grants rights to the software, not to the trademarks.
 
 ---
 
