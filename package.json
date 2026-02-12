@@ -1,6 +1,6 @@
 {
   "name": "0nork",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "0nORK - AI Orchestration Infrastructure. 535 tools, 26 services, 13 categories. The parent org behind 0nMCP and the .0n standard.",
   "main": "index.js",
   "scripts": {
