@@ -30,7 +30,7 @@
 
 **Universal AI API Orchestrator**
 
-The most comprehensive MCP server available. 252 tools, 17 services, natural language interface. Connect Claude to your entire stack.
+The most comprehensive MCP server available. 535 tools, 26 services, 13 categories, natural language interface. Connect Claude to your entire stack.
 
 ```bash
 npx 0nmcp init
@@ -141,17 +141,22 @@ Claude handles the rest.
 
 | Package | Description | Install |
 |---------|-------------|---------|
-| `0nmcp` | Universal AI API Orchestrator — 252 tools | `npx 0nmcp` |
+| `0nmcp` | Universal AI API Orchestrator — 535 tools, 26 services | `npx 0nmcp` |
 | `0n-spec` | The .0n Standard — config format | `npx 0n-spec` |
 | `0nork` | This package — ecosystem root | `npm i 0nork` |
 
-### Community
+### Community & Unlocks
 
-The 0n ecosystem is backed by **1,000+ developers** building the future of AI orchestration. We ship weekly, iterate fast, and build in the open.
+The 0n ecosystem grows with its community. Every milestone unlocks new capabilities — the more developers who join, the more powerful the platform becomes.
 
+- **[0nmcp.com/community](https://0nmcp.com/community)** — Community hub with guides, events, and resources
+- **[Unlock Schedule](https://0nmcp.com/sponsor)** — See the 7-phase roadmap from 535 tools to 5,000+
 - [GitHub Discussions](https://github.com/0nork/0nMCP/discussions) — Questions, ideas, show & tell
 - [Open Issues](https://github.com/0nork/0nMCP/issues) — Bugs, feature requests
 - [Contributing](https://github.com/0nork/0nMCP/blob/main/CONTRIBUTING.md) — Add services, fix bugs, improve docs
+- [Sponsor on GitHub](https://github.com/sponsors/0nork) — Fund the next unlock
+
+**Current:** 535 tools | 26 services | 13 categories | Phase 0 — Foundation complete
 
 ---
 
