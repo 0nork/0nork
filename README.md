@@ -1,57 +1,44 @@
-<p align="center">
-  <img src="https://0nork.com/logo.svg" alt="0nORK" width="300" />
-</p>
+<div align="center">
 
-<h1 align="center">0nORK</h1>
+<img src="https://raw.githubusercontent.com/0nork/0nMCP/main/.well-known/0n-icon-green.png" alt="0n" width="72" height="72" />
 
-<p align="center">
-  <strong>AI Orchestration Infrastructure</strong>
-</p>
+<h1>0nork</h1>
 
-<p align="center">
-  <a href="https://0nork.com">Website</a> •
-  <a href="https://github.com/0nork">GitHub</a> •
-  <a href="https://discord.gg/0nork">Discord</a>
-</p>
+<p><strong>AI Orchestration Infrastructure</strong><br/>
+The open-source org behind 0nMCP, the .0n Standard, and the 0n Marketplace.</p>
 
----
+[![npm](https://img.shields.io/npm/v/0nmcp?color=6EE05A&label=0nmcp&style=flat-square)](https://npmjs.com/package/0nmcp)
+[![npm downloads](https://img.shields.io/npm/dm/0nmcp?color=6EE05A&style=flat-square)](https://npmjs.com/package/0nmcp)
+[![GitHub stars](https://img.shields.io/github/stars/0nork/0nMCP?color=6EE05A&style=flat-square)](https://github.com/0nork/0nMCP/stargazers)
+[![License](https://img.shields.io/github/license/0nork/0nMCP?color=6EE05A&style=flat-square)](https://github.com/0nork/0nMCP/blob/main/LICENSE)
+[![Discord](https://img.shields.io/badge/discord-0nmcp-6EE05A?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/0nmcp)
+[![Patent Pending](https://img.shields.io/badge/USPTO-%2363%2F990%2C046-6EE05A?style=flat-square)](https://0nmcp.com)
 
-## What is 0nORK?
-
-0nORK builds infrastructure for AI orchestration. We create tools that let AI systems connect to and control external services through natural language.
-
-**Our mission**: Make AI orchestration as simple as flipping a switch.
+</div>
 
 ---
 
-## Products
+## What we build
 
-### 🔌 0nMCP
-
-**Universal AI API Orchestrator**
-
-The most comprehensive MCP server available. 535 tools, 26 services, 13 categories, natural language interface. Connect Claude to your entire stack.
+**0nMCP** is a Universal AI API Orchestrator — a single MCP server that gives any AI model (Claude, GPT, Gemini) access to 850 tools across 53 services. No subscriptions. No monthly fees. $0.10/execution.
 
 ```bash
-npx 0nmcp init
-npx 0nmcp connect
+npx 0nmcp
 ```
 
-**Links**: [NPM](https://npmjs.com/package/0nmcp) • [GitHub](https://github.com/0nork/0nmcp) • [Docs](https://0nmcp.com/docs)
+Connect your AI to Stripe, Slack, GitHub, LinkedIn, Cloudflare, Shopify, Twilio, HubSpot, Airtable, GoDaddy, Resend, SendGrid, and 41 more — through one interface, with one install.
 
 ---
 
-### 📋 The .0n Standard
+## Platform stats
 
-**Universal configuration format for AI orchestration**
-
-Like `.env` for environment variables, `.0n` is for AI orchestration config.
-
-```bash
-npx 0n-spec validate my-workflow.0n
-```
-
-**Links**: [NPM](https://npmjs.com/package/0n-spec) • [GitHub](https://github.com/0nork/0n-spec) • [Specification](https://github.com/0nork/0n-spec/blob/main/SPEC.md)
+| Metric | Count |
+|--------|-------|
+| 🔧 Tools | **850+** |
+| 🔌 Services | **53** |
+| ⚡ Capabilities | **1,385+** |
+| 💰 Price per execution | **$0.10** |
+| 🤖 Compatible AI models | Claude · GPT · Gemini · Any MCP client |
 
 ---
 
@@ -60,120 +47,55 @@ npx 0n-spec validate my-workflow.0n
 ```
 ~/.0n/                          ← Universal config directory
 ├── config.json                 ← Global settings
-├── connections/                ← Service credentials
+├── connections/                ← Service credentials  
 │   ├── stripe.0n
 │   ├── slack.0n
-│   └── crm.0n
+│   └── github.0n
 ├── workflows/                  ← Automation definitions
 │   └── invoice-notify.0n
-├── snapshots/                  ← System state captures
-│   └── crm-setup.0n
 └── history/                    ← Execution logs
 ```
 
-**Every 0nORK product uses `~/.0n/`** — one config to rule them all.
+Every 0nork product reads from `~/.0n/` — one config directory for your entire AI stack.
 
 ---
 
-## Quick Start
+## Repositories
 
-### 1. Install the MCP Server
+| Repo | Description |
+|------|-------------|
+| [**0nMCP**](https://github.com/0nork/0nMCP) | Universal AI API Orchestrator — the core platform |
+| [**0n-spec**](https://github.com/0nork/0n-spec) | The `.0n` Standard — universal config format for AI orchestration |
+| [**cr0n-engine**](https://github.com/0nork/cr0n-engine) | Federated AI closed learning loop — multi-model optimization engine |
+| [**0nmcp-website**](https://github.com/0nork/0nmcp-website) | Official 0nmcp.com site (Next.js + Vercel) |
 
-```bash
-npx 0nmcp init
-```
+---
 
-### 2. Connect Services
+## Quick start
 
-```bash
-npx 0nmcp connect
-# Follow prompts to add Stripe, Slack, etc.
-```
-
-### 3. Configure Claude Desktop
-
-Add to `claude_desktop_config.json`:
+**Claude Desktop / Cursor / Windsurf / any MCP client:**
 
 ```json
 {
   "mcpServers": {
     "0nmcp": {
       "command": "npx",
-      "args": ["-y", "0nmcp"]
+      "args": ["0nmcp"]
     }
   }
 }
 ```
 
-### 4. Orchestrate!
-
-Ask Claude:
-> "Invoice john@acme.com for $500 and notify #sales on Slack"
-
-Claude handles the rest.
-
----
-
-## Brand Assets
-
-| Asset | URL |
-|-------|-----|
-| 0nORK Logo | https://0nork.com/logo.svg |
-| 0nMCP Logo | https://0nmcp.com/logo.svg |
-| Brand Guide | https://0nork.com/brand |
+All 850 tools load instantly. No API key required to start.
 
 ---
 
 ## Links
 
-| Resource | URL |
-|----------|-----|
-| **0nORK Website** | https://0nork.com |
-| **0nMCP Website** | https://0nmcp.com |
-| **Documentation** | https://0nmcp.com/docs |
-| **GitHub Org** | https://github.com/0nork |
-| **Discord** | https://discord.gg/0nork |
-| **Twitter** | https://twitter.com/0nork |
+<div align="center">
 
----
+[**0nmcp.com**](https://0nmcp.com) · [**npm**](https://npmjs.com/package/0nmcp) · [**Discord**](https://discord.gg/0nmcp) · [**Releases**](https://github.com/0nork/0nMCP/releases)
 
-## Packages
+<sub>Patent Pending · USPTO #63/990,046 · RocketOpp LLC · New Alexandria, PA</sub>
 
-| Package | Description | Install |
-|---------|-------------|---------|
-| `0nmcp` | Universal AI API Orchestrator — 535 tools, 26 services | `npx 0nmcp` |
-| `0n-spec` | The .0n Standard — config format | `npx 0n-spec` |
-| `0nork` | This package — ecosystem root | `npm i 0nork` |
-
-### Community & Unlocks
-
-The 0n ecosystem grows with its community. Every milestone unlocks new capabilities — the more developers who join, the more powerful the platform becomes.
-
-- **[0nmcp.com/community](https://0nmcp.com/community)** — Community hub with guides, events, and resources
-- **[Unlock Schedule](https://0nmcp.com/sponsor)** — See the 7-phase roadmap from 535 tools to 5,000+
-- [GitHub Discussions](https://github.com/0nork/0nMCP/discussions) — Questions, ideas, show & tell
-- [Open Issues](https://github.com/0nork/0nMCP/issues) — Bugs, feature requests
-- [Contributing](https://github.com/0nork/0nMCP/blob/main/CONTRIBUTING.md) — Add services, fix bugs, improve docs
-- [Sponsor on GitHub](https://github.com/sponsors/0nork) — Fund the next unlock
-
-**Current:** 535 tools | 26 services | 13 categories | Phase 0 — Foundation complete
-
----
-
-## License
-
-MIT License - see individual package licenses.
-
-**Our position:** Every core tool we build gets released as open source. We believe the AI orchestration layer should be free, composable, and community-owned. If someone tries to sell you these tools, know that they're free right here. Always.
-
-**Trademarks**: "0nORK", "0nMCP", ".0n", and "The .0n Standard" are trademarks of RocketOpp. The MIT license grants rights to the software, not to the trademarks.
-
----
-
-<p align="center">
-  <strong>0nORK</strong>
-  <br>
-  <em>AI Orchestration Infrastructure</em>
-  <br><br>
-  Turn it on. It just works.
-</p>
+</div>
