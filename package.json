@@ -1,7 +1,7 @@
 {
   "name": "0nork",
-  "version": "1.0.1",
-  "description": "0nORK — AI Orchestration Infrastructure. 1,466 tools, 101 services, 5 patents pending. The parent org behind 0nMCP, 0nCore, and the .0n standard. Building the universal AI operating system.",
+  "version": "1.1.0",
+  "description": "0nORK — AI Orchestration Infrastructure. 1,640+ tools, 109 services, 5 patents pending. Official MCP Registry listed. UCP + .0n App Marketplace + Course Builder + Lead Magnet Loop + Agentic Automation Generator + SaaS Factory + App Builder + Website Builder. Public availability for 0nCore: 2026-05-01. The parent org behind 0nMCP, 0nCore, and the .0n Standard v2.1.",
   "main": "index.js",
   "scripts": {
     "postinstall": "echo '\\n🚀 0nORK - AI Orchestration Infrastructure\\n\\nProducts:\\n  • 0nmcp - Universal AI API Orchestrator\\n  • 0n-spec - The .0n Standard\\n\\nInstall:\\n  npx 0nmcp init\\n\\nLearn more: https://0nork.com\\n'"
